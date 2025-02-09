@@ -1,0 +1,298 @@
+/* Reset CSS Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100vh; /* Mantém a altura mínima da página */
+    font-family: Arial, sans-serif;
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Ocupa todo o espaço disponível, empurrando o footer para baixo */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Variáveis de cores e estilo */
+:root {
+    --cor-primaria: #4caf50;
+    --cor-secundaria: #81c784;
+    --cor-branca-padrao: #fff;
+    --cor-background: #262626;
+    --font-family: 'Arial', sans-serif;
+    --padding-botao: 0.6rem;
+    --border-radius: 0.6rem;
+}
+
+/* Navegação */
+nav {
+    color: var(--cor-branca-padrao);
+    background-color: var(--cor-background);
+    padding: 0.8rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 1.2rem;
+}
+
+#reglogin {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+nav ul li a, #reglogin a {
+    background-color: var(--cor-primaria);
+    padding: var(--padding-botao);
+    border-radius: var(--border-radius);
+}
+
+nav ul li a:hover, #reglogin a:hover {
+    opacity: 0.8;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+/* FinanceInteligente */
+#financeinteligente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--cor-primaria);
+    border-radius: var(--border-radius);
+    margin: 1rem auto;
+    padding: 1rem;
+    max-width: 600px;
+}
+
+#finance {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+    color: var(--cor-branca-padrao);
+}
+
+#finance2 {
+    font-size: 0.8rem;
+    color: var(--cor-branca-padrao);
+}
+
+/* Gerencie Seu Dinheiro */
+#gerencie-seu-dinheiro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: #ffffff;
+    margin: 1.2rem;
+    padding: 1.2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+#gerencie-seu-dinheiro div {
+    flex: 2;
+    min-width: 300px;
+}
+
+#gerencie-seu-dinheiro img {
+    flex: 1;
+    max-width: 20%;
+    height: auto;
+    border-radius: var(--border-radius);
+    object-fit: cover;
+    min-width: 200px;
+}
+
+#gerencie-seu-dinheiro:hover {
+    cursor: default;
+}
+
+#gerencie-seu-dinheiro h1 {
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 1rem;
+}
+
+#gerencie-seu-dinheiro p {
+    font-size: 1rem;
+    margin: 1rem 0;
+    line-height: 1.6;
+}
+
+#gerencie-seu-dinheiro ul {
+    margin-left: 1.25rem;
+}
+
+#gerencie-seu-dinheiro span {
+    font-weight: bold;
+}
+
+/* Cards Funcionalidades */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    padding: 1.2rem;
+    justify-content: space-evenly;
+    color: var(--cor-branca-padrao);
+}
+
+.cards-container {
+    flex: 1;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    background-color: var(--cor-background);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.cards-container:hover {
+    background-color: var(--cor-secundaria);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Estilização do Formulário de Login e Registro */
+.container-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-box {
+    background-color: var(--cor-branca-padrao);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.form-box h2 {
+    color: var(--cor-background);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.form-box input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.form-box input:focus {
+    border-color: var(--cor-primaria);
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+.form-box button {
+    width: 100%;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca-padrao);
+    padding: 0.8rem;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.form-box button:hover {
+    background-color: var(--cor-secundaria);
+    transform: scale(1.05);
+}
+
+.form-box a {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--cor-background);
+}
+
+.form-box a:hover {
+    color: var(--cor-primaria);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: var(--cor-background);
+    color: #ffffff;
+    padding: 2rem;
+    margin-top: auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 300px;
+    color: #e0e0e0;
+}
+
+.footer-copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--cor-background);
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .form-box {
+        width: 90%;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
