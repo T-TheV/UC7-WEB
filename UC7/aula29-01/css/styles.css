@@ -1,0 +1,100 @@
+/* ==========================================================
+   RESET CSS - Remove margens e paddings padrão
+   ========================================================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* ==========================================================
+     ESTILOS GERAIS
+     ========================================================== */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;  /* Cor de fundo clara */
+    padding: 1.6rem;            /* Espaçamento interno */
+    color: #333;                /* Cor do texto */
+    text-align: center;         /* Alinha o texto ao centro */
+  }
+  
+  /* ==========================================================
+     ESTILOS DO CABEÇALHO
+     ========================================================== */
+  header {
+    background-color: #0077b6;  /* Cor de fundo azul */
+    color: white;               /* Cor do texto branco */
+    padding: 1.6rem;            /* Espaçamento interno */
+    margin-bottom: 1.6rem;      /* Espaçamento abaixo do cabeçalho */
+  }
+  
+  /* ==========================================================
+     ÁREA PRINCIPAL
+     ========================================================== */
+  main {
+    width: 40%;                /* Largura total */
+    max-width: 60rem;           /* Largura máxima */
+    margin: 0 auto;             /* Centraliza o conteúdo */
+  }
+  
+  /* ==========================================================
+     SEÇÃO DE PRODUTOS - Usando grid para organizar os cards
+     ========================================================== */
+  .produtos {
+    display: grid;                        /* Muda de inline-block para grid */
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));  /* Cria colunas dinâmicas que se ajustam */
+    gap: 1rem;                            /* Espaçamento entre os cards */
+    justify-items: center;                /* Centraliza os cards horizontalmente */
+  }
+  
+  /* ==========================================================
+     ESTILOS DO CARD DE PRODUTO
+     ========================================================== */
+  .produto-card {
+    background-color: white;    /* Cor de fundo branca */
+    border: 0.1rem solid #0077b6;  /* Borda azul clara */
+    border-radius: 10px;        /* Cantos arredondados */
+    padding: 1.6rem;            /* Espaçamento interno */
+    width: 100%;                /* O card ocupa 100% da largura disponível */
+    max-width: 15rem;           /* Largura máxima do card */
+    text-align: inline;         /* Alinha o conteúdo do card ao centro */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);  /* Efeito de sombra */
+    margin-bottom: 1.6rem;      /* Espaço inferior entre os cards */
+  }
+  
+  /* ==========================================================
+     IMAGENS DOS PRODUTOS
+     ========================================================== */
+  .produto-card img {
+    width: 100%;                /* Faz a imagem ocupar toda a largura do card */
+    height: 10rem;              /* Altura fixa para as imagens */
+    border-radius: 5px;         /* Bordas arredondadas */
+    border: 2px solid #ddd;     /* Borda cinza leve para as imagens */
+    margin-bottom: 10px;        /* Espaçamento abaixo das imagens */
+  }
+  
+  /* ==========================================================
+     ESTILOS DOS TÍTULOS DOS PRODUTOS
+     ========================================================== */
+  .produto-card h3 {
+    color: #0077b6;             /* Cor do título azul */
+    margin-bottom: 5px;         /* Espaçamento abaixo do título */
+  }
+  
+  .produto-card:hover{
+    transform: scale(1.10); /* Valor menor para um efeito de zoom mais sutil */
+    transition: transform 0.3s ease-in-out; /* Transição suave para o efeito de transformação */
+    color: #0077b6;
+
+  }
+
+  /* ==========================================================
+     RODAPÉ
+     ========================================================== */
+  footer {
+    background-color: #0077b6;  /* Cor de fundo azul */
+    color: white;               /* Cor do texto branco */
+    padding: 10px;              /* Espaçamento interno */
+    margin-top: 20px;           /* Espaçamento acima do rodapé */
+  }
+  

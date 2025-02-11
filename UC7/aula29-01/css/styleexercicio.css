@@ -1,0 +1,42 @@
+
+*{/*Reset basico do css*/
+    margin: 0; /* Remover todas as margens */
+    padding: 0;/* Remover todo o preenchimento */
+    box-sizing: border-box; /*Inclui bordas e preenchimento para calcular o tamanho */
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+#destaque{
+    color: #ff6600;
+    padding: 0.5%;
+    font-weight: bold;
+}
+
+p{
+    margin-top: 15px;
+    padding: 0.5%;
+
+}
+
+.pixel{
+    font: 20px verdana, arial, tahoma, sans-serif;
+}
+
+.tipografica{
+    font: 1.2rem verdana, arial, tahoma, sans-serif;
+}
+
+.div{
+    font-size: 2em;
+}
+
