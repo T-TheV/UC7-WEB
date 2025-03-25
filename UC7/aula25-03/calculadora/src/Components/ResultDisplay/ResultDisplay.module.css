@@ -1,0 +1,14 @@
+.resultDisplay {
+    display: flex;
+    flex-direction: column; /* Altera para leitura de cima para baixo */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px; /* Define uma largura máxima */
+    min-height: 60vh; /* Ajusta a altura mínima */
+    margin: 20px auto; /* Centraliza horizontalmente */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px; /* Bordas mais suaves */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Sombra mais suave */
+}

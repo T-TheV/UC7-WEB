@@ -1,14 +1,11 @@
 import React from "react";
-import Button from "./Components/Button/Button"
-import InputField from "./Components/InputField/InputField"
-import ResultDisplay from "./Components/ResultDisplay/ResultDisplay"
+import TipCalculator from "../src/Pages/TipCalculator";
 
 function App() {
   return (
+    
     <>
-      <Button />
-      <InputField />
-      <ResultDisplay />
+     <TipCalculator />
     </>
   );
 }
