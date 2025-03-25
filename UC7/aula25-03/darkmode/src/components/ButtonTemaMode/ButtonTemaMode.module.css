@@ -1,0 +1,26 @@
+.dark {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 8px 16px;
+    transition: 1s ;
+}
+
+.light {
+    background-color: #f9f9f9;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px 16px;
+    transition: 1s ;
+}
+
+.button{
+    background-color: #61dafb;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px 16px;
+    transition: 1s ;
+}
